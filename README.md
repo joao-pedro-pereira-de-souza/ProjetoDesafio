@@ -2,8 +2,7 @@
 Delivery (Expo) React Native
 
 
-Crie um projeto expo, instale as bibliotécas:
-
+installed libraries
 ```
 npm  install @react-navigation/native
 ```
@@ -26,8 +25,6 @@ npm install styled-components
 ```
 expo install react-native-maps
 ```
-
-depois da instalação adicione a pasta src e substitua o arquivo App.js do projeto.
 
 
 ### Design Projeto :
