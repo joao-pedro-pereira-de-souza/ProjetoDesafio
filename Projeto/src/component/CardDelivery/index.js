@@ -7,7 +7,7 @@ import MapView from 'react-native-maps';
 import {Dimensions} from 'react-native'
 const widthScreen = Dimensions.get('window').width;
 
-export default function CardDelivery() {
+export default function CardDelivery(props) {
 
     const location = {
 
@@ -25,7 +25,13 @@ export default function CardDelivery() {
 
           {/*<Img source={require('../../image/map.png')} resizeMode='cover'/>} */}
 
-          <MapView style={{flex:1}} initialRegion={ location } zoomEnabled={false} />
+          <MapView style={{flex:1}} 
+          initialRegion={ 
+
+            props.location
+
+           } 
+           zoomEnabled={false} />
 
        </ContainerMap>
 

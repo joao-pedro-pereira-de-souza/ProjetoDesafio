@@ -3,12 +3,11 @@ import React from 'react';
 import {Container ,
 ContainerTop,
 ContainerSeach,
-ContainerInput,
-InputSech
 
+} from './styles';
 
-} from './styles'
 import { AntDesign , Entypo} from '@expo/vector-icons';
+import Input from '../../component/input/index';
 
 export default function header({placeholder}) {
  return (
@@ -23,11 +22,7 @@ export default function header({placeholder}) {
 
        <ContainerSeach>
 
-           <ContainerInput>
-             <AntDesign name="search1" size={24} color="#FFF" />
-             <InputSech placeholder={placeholder}/>
-
-           </ContainerInput>
+           <Input Icon={AntDesign} name='search1' place='Pesquisa' placeTextColor='#dfe4ea'/>
 
        </ContainerSeach>
 
