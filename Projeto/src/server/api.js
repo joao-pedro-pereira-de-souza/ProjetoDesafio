@@ -42,4 +42,23 @@ export const DatabasePoits = [
         latitudeDelta: 0.0522,
         longitudeDelta: 0.0321,
     },
+    {
+        latitude: -23.6563908,
+        longitude: -46.527519,
+        latitudeDelta: 0.0522,
+        longitudeDelta: 0.0321,
+    },
+]
+
+export const keyMaps =[
+
+    {
+        key:0
+    },
+    {
+        key:1
+    },
+    {
+        key:2
+    },
 ]

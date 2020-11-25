@@ -10,3 +10,11 @@ export const colors ={
     blueLing :'#181B3A',
 }
 
+export const shadown ={
+    elevation:10,
+    shadowColor: '#6C63FF',
+    shadowOffset: { width: 0, height: 3 },
+    shadowOpacity: 0.5,
+    shadowRadius: 5, 
+}
+

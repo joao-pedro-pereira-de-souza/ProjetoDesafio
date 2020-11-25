@@ -23,9 +23,9 @@ export default function CardDelivery(props) {
    <Container>
        <ContainerMap>
 
-          {/*<Img source={require('../../image/map.png')} resizeMode='cover'/>} */}
+          <MapView 
 
-          <MapView style={{flex:1}} 
+          style={{flex:1}} 
           initialRegion={ 
 
             props.location

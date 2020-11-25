@@ -18,11 +18,11 @@ export default function Home() {
 
      <ContainerDelivery>
 
-    {DatabasePoits.map((point) =>(
+     {DatabasePoits.map((point , key) =>(
 
       <CardDelivery
       
-      key={point.key}
+      key={key}
       location={point}
 
       />

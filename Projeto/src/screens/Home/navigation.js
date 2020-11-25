@@ -56,10 +56,16 @@ export default function screens() {
            backgroundColor:'#181B3A',
            borderTopWidth:0,
            height:60,
+           paddingBottom:10
+           
            
         
        },
-       activeTintColor:'#6C63FF'
+       activeTintColor:'#6C63FF',
+       labelStyle:{
+           marginTop:-16,
+          
+       }
        
        
        }}>
