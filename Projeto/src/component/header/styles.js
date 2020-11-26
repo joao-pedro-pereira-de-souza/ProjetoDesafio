@@ -26,6 +26,7 @@ padding: 0px 20px;
 export const ContainerSeach = styled.View`
 
 align-self:center;
+padding:0px 30px;
 
 
 `;

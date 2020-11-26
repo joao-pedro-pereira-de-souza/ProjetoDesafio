@@ -1,92 +1,69 @@
 import styled from 'styled-components/native';
+import {colors} from '../../../styles'
 
-import {colors , heightScreen} from '../../../styles';
+export const Container = styled.View`
 
-export const Container = styled.ScrollView`
   flex:1;
   background: ${colors.blueDark};
+  display:flex;
+  justify-content:center;
+  align-items:center;
+
 `;
- export const ContainerInput = styled.View`
- 
- align-self:center;
- margin-top: ${heightScreen * 0.08}px;
- 
- `;
 
- export const ContainerCardsPedidosOK = styled.View`
- 
- width:100%;
- height: 300px;
- align-self:center;
- margin: 20px 0px;
- 
- `;
- export const SlideView = styled.View`
- 
- width: 100%;
- height: 240px;
- border-radius:10px;
- overflow:hidden;
- 
- `;
+export const ContainerForm = styled.View`
 
-export const ContainerTitulo = styled.View`
-
+padding:20px;
+width:90%;
+background: ${colors.blueLing};
 margin: 20px 0px;
+
+border-top-left-radius:30px;
+border-bottom-right-radius:30px;
+
+
+`;
+export const ContainerInput = styled.View`
 width:100%;
-padding:0px 20px;
+margin:10px 0px;
+align-self:center;
 
 `;
- export const ContainerDescriptMaps = styled.View`
- 
- width:100%;
- height:50%;
- background: ${colors.blue};
+export const ContainerInputSearch = styled.View`
 
- opacity: 0.3 ;
- position:absolute;
- 
- `;
-
- export const ContainerDescriptItensMaps = styled.View`
- width:100%;
- padding: 0px 10px;
- position:absolute;
- align-self:center;
- margin-top:10px;
-
-
- `;
-
-export const Title = styled.Text`
-
-font-size: 17px;
-font-weight:bold;
-color: #fff;
-
-`;
-export const ContainerLabelMaps = styled.View`
-
-max-height:45px;
-overflow:hidden;
-
-`;
-
- export const Label = styled.Text`
- 
- font-size:13px;
- color: #fff;
- opacity: 0.7;
- 
- `;
-
-export const ContaierStarMaps = styled.View`
-
-position:absolute;
+width:100%;
+margin:10px 0px;
 flex-direction:row;
-top:120%;
-right:10%;
+justify-content:space-between;
+align-items:center;
 
-`
+`;
+
+export const ContainerInputSearchInput = styled.View`
+
+width:80%;
+
+`;
+
+export const ButtonSearch = styled.TouchableOpacity`
+
+width:16%;
+height:45px;
+background:${colors.blue};
+border-radius:7px;
+
+display:flex;
+justify-content:center;
+align-items:center;
+
+`;
+
+export const ContainerViewDestino = styled.View`
+
+width:100%;
+height: 200px;
+background: ${colors.blueDark};
+border-radius:10px;
 
 
+`;

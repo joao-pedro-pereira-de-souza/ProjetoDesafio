@@ -1,118 +1,45 @@
-import React, {useRef} from 'react';
-import { View , Dimensions} from 'react-native'
-import Carousel from 'react-native-snap-carousel'
-import { AntDesign } from '@expo/vector-icons';
-import MapView from 'react-native-maps';
-
-
-import { Container , 
-  ContainerInput , 
-  Title , 
-  Label , 
-  ContainerTitulo , 
-  ContainerCardsPedidosOK , 
-  SlideView , 
-  ContainerDescriptMaps , 
-  ContainerDescriptItensMaps ,
-  ContainerLabelMaps ,
-  ContaierStarMaps
-
-} 
-  
-  from './styles';
-
+import React from 'react';
+import { Container , ContainerForm , ContainerInput , ContainerInputSearch , ContainerInputSearchInput , ContainerViewDestino , ButtonSearch} from './styles';
 import Input from '../../../component/input/index';
-import {DatabasePoits} from '../../../server/api'
-import { widthScreen , shadown} from '../../../styles'
-
+import {colors} from '../../../styles'
+import { MaterialIcons , FontAwesome , AntDesign} from '@expo/vector-icons';
 export default function NewDelivery() {
-
-  const CarouselRef = useRef(null)
-
-  const reder = ({item , index})=>{
-
-    return(
-
-      <View>
-
-        <SlideView style={{shadown}}>
-
-         <MapView 
-
-          style={{flex:1}} 
-          initialRegion={ 
-
-            item
-
-          } 
-          zoomEnabled={false} 
-          scrollEnabled={false}
-          > 
-
-        </MapView>
-
-        </SlideView>
-
-        <ContainerDescriptMaps/>
-
-        <ContainerDescriptItensMaps>
-
-              <Title>Titulo do pedido</Title>
-
-          <ContainerLabelMaps>
-
-              <Label>
-                Descrição da entrega.
-              </Label>
-
-          </ContainerLabelMaps>
-
-          <ContaierStarMaps>
-
-              <AntDesign name="star" size={16} color="#fff200" />
-              <AntDesign name="star" size={16} color="#fff200" />
-              <AntDesign name="star" size={16} color="#fff200" />
-              <AntDesign name="star" size={16} color="#fff200" />
-              <AntDesign name="star" size={16} color="#FEF99C" />
-              <AntDesign name="star" size={16} color="#FEF99C" />
-
-          </ContaierStarMaps>
-          
-        </ContainerDescriptItensMaps>
-
-      </View>
-
-    )
-
-  }
  return (
    <Container>
-     
-     <ContainerInput>
 
-     <Input Icon={AntDesign} name='search1' place='Local de destino' placeTextColor='#dfe4ea'/>
+     <ContainerForm>
 
-     </ContainerInput>
+       <ContainerInput>
+          <Input Icon={MaterialIcons} name='title' place='Titulo' placeTextColor='#dfe4ea' bg={colors.blueDark} />
+       </ContainerInput>
+   
+       <ContainerInput>
+          <Input Icon={MaterialIcons} name='subtitles' place='Descrição' placeTextColor='#dfe4ea' bg={colors.blueDark} />
+       </ContainerInput>
+       
+       <ContainerInputSearch>
 
-     <ContainerTitulo>
+         <ContainerInputSearchInput>
 
-        <Title>Entregas Finalizadas</Title>
+            <Input Icon={FontAwesome} name='map-marker' place='Destino' placeTextColor='#dfe4ea' bg={colors.blueDark} />
 
-     </ContainerTitulo>
+         </ContainerInputSearchInput>
+        
+          <ButtonSearch>
 
-     <ContainerCardsPedidosOK>
+          <AntDesign name="search1" size={20} color="#fff" />
 
-        <Carousel 
-        ref={CarouselRef}
-        data={DatabasePoits}
-        renderItem={reder}
-        sliderWidth={widthScreen}
-        itemWidth={180}
-        firstItem={1}
-        />
+          </ButtonSearch>
 
-     </ContainerCardsPedidosOK>
+       </ContainerInputSearch>
+
+       <ContainerViewDestino>
+
+       </ContainerViewDestino>
+
+     </ContainerForm>
 
    </Container>
+
   );
 }

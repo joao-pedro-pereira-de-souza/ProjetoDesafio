@@ -4,9 +4,9 @@ import {colors , widthScreen , heightScreen} from '../../styles'
 
 export const Container = styled.SafeAreaView`
 
-width:80%;
+width:100%;
 padding: ${heightScreen * 0.018}px;
-margin:0px 10px;
+
 background: ${({bg}) => bg || colors.blueLing};
 border-radius:${heightScreen * 0.01}px;
 
