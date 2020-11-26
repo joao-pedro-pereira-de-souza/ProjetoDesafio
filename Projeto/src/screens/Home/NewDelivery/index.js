@@ -1,13 +1,14 @@
 import React from 'react';
+import { View } from 'react-native'
 import { Container , ContainerForm , ContainerInput , ContainerInputSearch , ContainerInputSearchInput , ContainerViewDestino , ButtonSearch} from './styles';
 import Input from '../../../component/input/index';
-import {colors} from '../../../styles'
+import {colors , styles , shadown} from '../../../styles'
 import { MaterialIcons , FontAwesome , AntDesign} from '@expo/vector-icons';
 export default function NewDelivery() {
  return (
    <Container>
 
-     <ContainerForm>
+     <ContainerForm >
 
        <ContainerInput>
           <Input Icon={MaterialIcons} name='title' place='Titulo' placeTextColor='#dfe4ea' bg={colors.blueDark} />
@@ -25,7 +26,7 @@ export default function NewDelivery() {
 
          </ContainerInputSearchInput>
         
-          <ButtonSearch>
+          <ButtonSearch> 
 
           <AntDesign name="search1" size={20} color="#fff" />
 
@@ -38,7 +39,6 @@ export default function NewDelivery() {
        </ContainerViewDestino>
 
      </ContainerForm>
-
    </Container>
 
   );

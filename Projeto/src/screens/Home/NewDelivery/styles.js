@@ -18,9 +18,12 @@ width:90%;
 background: ${colors.blueLing};
 margin: 20px 0px;
 
+border-width:1px;
+border-color:#989DFF;
+
+
 border-top-left-radius:30px;
 border-bottom-right-radius:30px;
-
 
 `;
 export const ContainerInput = styled.View`
@@ -64,6 +67,5 @@ width:100%;
 height: 200px;
 background: ${colors.blueDark};
 border-radius:10px;
-
 
 `;
