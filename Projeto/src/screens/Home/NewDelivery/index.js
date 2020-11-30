@@ -1,8 +1,7 @@
 import React from 'react';
-import { View } from 'react-native'
 import { Container , ContainerForm , ContainerInput , ContainerInputSearch , ContainerInputSearchInput , ContainerViewDestino , ButtonSearch} from './styles';
 import Input from '../../../component/input/index';
-import {colors , styles , shadown} from '../../../styles'
+import {colors } from '../../../styles'
 import { MaterialIcons , FontAwesome , AntDesign} from '@expo/vector-icons';
 export default function NewDelivery() {
  return (
@@ -35,6 +34,19 @@ export default function NewDelivery() {
        </ContainerInputSearch>
 
        <ContainerViewDestino>
+
+        <MapView 
+
+          style={{flex:1}} 
+          initialRegion={ 
+
+            item
+
+          } 
+          zoomEnabled={false} 
+          scrollEnabled={false}
+          /> 
+
 
        </ContainerViewDestino>
 

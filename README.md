@@ -31,6 +31,9 @@ expo install react-native-maps
 
 ![Telas SignIn e SignUp ](https://github.com/joaopedro29/ProjetoDesafio/blob/main/image/designTemplate.png)
 
+## Screens Home
+
+![Telas SignIn e SignUp ](https://github.com/joaopedro29/ProjetoDesafio/blob/main/image/FluxTabBar.png)
 
 ## Home Map
 

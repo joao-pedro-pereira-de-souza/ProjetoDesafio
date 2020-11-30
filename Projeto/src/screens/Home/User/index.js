@@ -39,7 +39,6 @@ export default function User() {
         <SlideView >
 
          <MapView 
-
             style={{flex:1}} 
             initialRegion={ 
 
