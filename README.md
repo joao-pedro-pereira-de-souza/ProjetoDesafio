@@ -33,7 +33,10 @@ expo install react-native-maps
 
 ## Screens Home
 
-![Telas SignIn e SignUp ](https://github.com/joaopedro29/ProjetoDesafio/blob/main/image/FluxTabBar.png)
+<div align="center">
+<img src="https://github.com/joaopedro29/ProjetoDesafio/blob/main/image/FluxTabBargif" >
+
+</div>
 
 ## Home Map
 
