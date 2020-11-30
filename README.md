@@ -34,7 +34,7 @@ expo install react-native-maps
 ## Screens Home
 
 <div align="center">
-<img src="https://github.com/joaopedro29/ProjetoDesafio/blob/main/image/FluxTabBargif.png" >
+<img src="https://github.com/joaopedro29/ProjetoDesafio/blob/main/image/FluxTabBar.png" >
 
 </div>
 
